@@ -1,13 +1,9 @@
-const myName = () => {
-    return "Alberto"
-}
+import printHello from "./utils/helloworld.mjs";
+import myName from "./utils/myname.mjs";
 
-const hello = () => {
-    return "Hello"
-}
 
 const sayHello = (userName) => {
-    return (hello() + " " + userName());
+    return (printHello() + " " + userName());
 }
 
 console.log(sayHello(myName));
