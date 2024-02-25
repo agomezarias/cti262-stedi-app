@@ -1,11 +1,12 @@
 import printHello from '../utils/helloworld.mjs';
 import assert from 'assert';
+import myName from '../utils/myname.mjs';
 
-it("This should say Hello", () => {
+it("This should say Hello Alberto", () => {
 
-    const helloString = printHello();
+    const helloString = printHello() + " " + myName();
 
-    assert.equal(helloString, "Hello");
+    assert.equal(helloString, "Hello Alberto");
     // console.log(helloString);
 
 
